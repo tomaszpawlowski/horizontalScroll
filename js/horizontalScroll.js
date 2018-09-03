@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     for (var i = 0; i < horizontalScroll.length; i++) {
         horizontalScroll[i].addEventListener("wheel", function (e) {
             if (e.deltaY !== 0) {
-                this.scroll((this.scrollLeft + e.deltaY), 0);
+                console.log(this.scrollLeft, e.deltaY);
+                this.scrollLeft += e.deltaY;
             }
             else {
                 console.log("[horizontalScroll]", this, "deltaY : none value. Event:", e);
