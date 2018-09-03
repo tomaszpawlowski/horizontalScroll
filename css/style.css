@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+.horizontalScroll {
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+}
+.horizontalScroll img {
+    height: 100%;
+}
+@media only screen and (min-width: 1080px) {
+    .horizontalScroll {
+        overflow-x: hidden;
+    }
+}
